@@ -1,5 +1,6 @@
 package com.example.marc
 
+import android.content.Intent
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,6 +14,16 @@ import com.budiyev.android.codescanner.DecodeCallback
 import com.budiyev.android.codescanner.ErrorCallback
 import com.budiyev.android.codescanner.ScanMode
 import kotlinx.android.synthetic.main.activity_main.*
+import android.view.View
+
+
+
+
+
+
+
+
+
 
 private const val CAMERA_REQUEST_CODE = 101
 
@@ -26,6 +37,11 @@ class MainActivity : AppCompatActivity() {
 
         setupPermissions()
         codeScanner()
+
+        confirm_button.setOnClickListener {
+            val intent = Intent(this, activity_success::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun codeScanner() {
@@ -42,6 +58,8 @@ class MainActivity : AppCompatActivity() {
             decodeCallback = DecodeCallback {
                 runOnUiThread{
                     tv_textview.text = it.text
+                    val b = findViewById<View>(R.id.confirm_button)
+                    b.visibility = View.VISIBLE
                 }
             }
 

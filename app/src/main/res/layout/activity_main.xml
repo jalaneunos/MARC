@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
   <com.budiyev.android.codescanner.CodeScannerView
       android:id="@+id/scanner_view"
       android:layout_width="match_parent"
@@ -14,8 +15,9 @@
       app:autoFocusButtonVisible="true"
       app:flashButtonColor="@android:color/white"
       app:flashButtonVisible="true"
-      app:maskColor="#68070505" />
+      app:maskColor="#68070505">
 
+  </com.budiyev.android.codescanner.CodeScannerView>
 
   <TextView
       android:id="@+id/tv_textview"
@@ -23,8 +25,30 @@
       android:layout_height="wrap_content"
       android:layout_below="@+id/scanner_view"
       android:layout_centerHorizontal="true"
-      android:layout_margin="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="20dp"
       android:text="Scan MARC QR to checkout"
-      android:textColor="@android:color/black" />
+      android:textColor="@android:color/black"
+      android:textSize="24sp" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/confirm_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/tv_textview"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginEnd="24dp"
+      android:layout_marginBottom="391dp"
+      android:background="#84B777"
+      android:backgroundTint="#84B777"
+      android:text="Confirm"
+      android:textSize="20sp"
+      android:visibility="visible" />
+
 
 </RelativeLayout>
