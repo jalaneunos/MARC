@@ -5,7 +5,7 @@ MARC is a holistic automated system which consists of a smart recycling bin and 
 This project is Team Rainer's Rabbits submission for SUTD What the Hack 2021.
 
 ### Demo Video
-[![MarcLink](https://img.youtube.com/vi/Yhq7OZPlP7Y&ab_channel=ClarissaBellaJew/0.jpg)](https://www.youtube.com/watch?v=Yhq7OZPlP7Y&ab_channel=ClarissaBellaJew)
+[![MarcLink](https://img.youtube.com/vi/Yhq7OZPlP7Y/0.jpg)](https://www.youtube.com/watch?v=Yhq7OZPlP7Y&ab_channel=ClarissaBellaJew)
 
 ### Built with
 
